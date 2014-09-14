@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <h4>Welcome to BizzFuzz !</h4>
+	<hr>
+     <ul>
+	<li><a href="{% url 'bizz_fuzz_app:all-users-view'%}">View users</a></li>
+    <li><a href="{% url 'bizz_fuzz_app:add-new-user'%}">Add new user</a><br/></li>
+    </ul>
+	<a href="/admin/">Log in to admin panel
+{% endblock content %}
